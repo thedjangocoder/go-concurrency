@@ -6,8 +6,10 @@ import (
 )
 
 func main() {
-	go count("sheep")
-	count("fish")
+	//	go count("sheep") //  1 processor
+	//	go count("fish")  //  2 processors
+	go count("dog") //  3 processors
+	count("goat")   //  4 processors
 }
 
 func count(thing string) {
